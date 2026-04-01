@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ugly</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 15px;
+  border: 5px dashed hotpink;
+  font-family: Comic Sans MS, cursive;
+}
+
+body {
+  background: linear-gradient(45deg, red, lime, blue, yellow);
+  overflow-x: hidden;
+}
+
+div.container {
+  background: orange;
+  position: relative;
+}
+
+.container > p {
+  color: white;
+  background: black;
+}
+
+h1 + p {
+  transform: rotate(5deg);
+}
+
+h1 ~ span {
+  font-size: 40px;
+  color: purple;
+}
+
+#mainTitle {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(10deg);
+  background: cyan;
+  z-index: 999;
+}
+
+.floaty {
+  float: right;
+  width: 200px;
+  height: 200px;
+  background: magenta;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 300px;
+  background: lime;
+}
+
+.flexbox div {
+  flex-grow: 10;
+  background: red;
+  height: 50px;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  background: yellow;
+}
+
+.relative-box {
+  position: relative;
+  top: 50px;
+  left: -100px;
+  background: purple;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+  background: black;
+  color: white;
+}
+
+button:hover {
+  background: black;
+  color: yellow;
+  transform: scale(2) rotate(20deg);
+}
+
+li:nth-child(odd) {
+  background: cyan;
+  font-size: 25px;
+}
+
+li:nth-child(even) {
+  background: pink;
+  transform: rotate(-10deg);
+}
+
+@media (max-width: 600px) {
+  body {
+    background: black;
+  }
+
+  * {
+    transform: rotate(15deg);
+  }
+
+  .flexbox {
+    flex-direction: column-reverse;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 id="mainTitle">Why is this happening</h1>
+
+<div class="container">
+
+  <p>And what am I doing here</p>
+  <span> And how </span>
+
+  <div class="floaty"> am I ever gonna get out of </div>
+
+  <div class="flexbox">
+    <div>this</div>
+    <div>scary</div>
+    <div>place</div>
+  </div>
+
+  <div class="absolute-box">Wait! What the he// is that?</div>
+  <div class="relative-box">I can't take this anym0re!</div>
+
+  <div class="sticky">My God! This whole wacky world</div>
+
+  <h2>Just makes me</h2>
+
+  <ul>
+    <li>wanna</li>
+    <li>---</li>
+    <li>####</li>
+    <li>SCreAM</li>
+  </ul>
+
+  <button>N0 way 0ut</button>
+
+</div>
+
+</body>
+</html>
